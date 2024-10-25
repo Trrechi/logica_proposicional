@@ -1,0 +1,29 @@
+¿Qué es logic.py?
+El archivo logic.py es un programa en Python que nos ayuda a trabajar con lógica proposicional, que es una forma de lógica que trata sobre afirmaciones que pueden ser verdaderas o falsas. Imagina que quieres crear un sistema que pueda hacer preguntas y dar respuestas basadas en la verdad de ciertas afirmaciones. Este archivo es como una caja de herramientas que te permite hacer eso.
+
+Componentes Principales
+Símbolos:
+
+Los símbolos son como las piezas básicas de nuestro rompecabezas lógico. Por ejemplo, podríamos tener símbolos como P (el sol brilla) o Q (hace calor). Cada símbolo representa una afirmación que puede ser verdadera o falsa.
+Operadores Lógicos:
+
+El archivo incluye diferentes clases que actúan como operadores lógicos. Algunos ejemplos son:
+Not: Se usa para decir que algo no es cierto. Si P es "el sol brilla", entonces Not(P) sería "el sol no brilla".
+And: Se usa para conectar dos afirmaciones. Por ejemplo, P And Q significa "el sol brilla y hace calor", que solo es verdadero si ambas afirmaciones son verdaderas.
+Or: Este operador se usa para decir que al menos una de las afirmaciones es verdadera. Así, P Or Q significa "el sol brilla o hace calor".
+Implication: Este operador indica que si una afirmación es verdadera, entonces otra también lo es. Por ejemplo, "Si el sol brilla, entonces hace calor".
+Biconditional: Se utiliza para decir que dos afirmaciones son equivalentes. Por ejemplo, "El sol brilla si y solo si hace calor".
+Métodos para Evaluar:
+
+Cada clase tiene un método llamado evaluate. Este método permite determinar si una afirmación es verdadera o falsa según un modelo específico, que es como un conjunto de reglas que asigna valores de verdad a cada símbolo.
+Comprobación de Modelos:
+
+El archivo también incluye una función llamada model_check, que revisa si un conjunto de afirmaciones (llamado base de conocimiento) implica otra afirmación. Esto significa que puede comprobar si lo que sabemos nos permite concluir algo más.
+¿Para Qué Sirve?
+En resumen, logic.py nos permite:
+
+Construir afirmaciones lógicas: Puedes crear combinaciones de afirmaciones utilizando símbolos y operadores.
+Evaluar la verdad: Te permite averiguar si tus afirmaciones son verdaderas en diferentes situaciones.
+Verificar relaciones: Puedes comprobar si tus afirmaciones se relacionan entre sí de manera lógica, lo que es muy útil en campos como la inteligencia artificial, donde las decisiones a menudo se basan en la lógica.
+Este archivo es una herramienta poderosa para simular el razonamiento lógico, ayudando a las computadoras a entender y trabajar con la lógica de manera similar a como lo haría un ser humano.
+
