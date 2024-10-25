@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saludo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="my-4">¡Hola, bienvenido a mi página web!</h1>
+        <p class="lead">
+            En el último webinar que tuvimos, hablamos de un montón de cosas chéveres como:
+        </p>
+        <ul class="list-unstyled">
+            <li>Inteligencia Artificial</li>
+            <li>Computación en la nube</li>
+            <li>Ciberseguridad</li>
+            <li>Machine Learning (Aprendizaje Automático)</li>
+        </ul>
+        <p class="lead">
+            También se mostró un ejemplo de Lulobank, una empresa que está sacándole jugo a todas estas herramientas para ofrecer servicios financieros súper innovadores. ¡Y la verdad es que es clave entender cómo estas tecnologías pueden mejorar la eficiencia, la seguridad y la personalización en lo que hacemos!
+        </p>
+        <p class="lead">
+            La inteligencia artificial (IA) es como las máquinas hacen cosas que normalmente haría un humano pero de manera automática y sin necesidad de la intervención humana, como aprender, resolver problemas, tomar decisiones, así como la inteligencia de negocios.
+        </p>
+        
+        <h2 class="my-4">Ejemplo de Proposición Lluvia</h2>
+        <p class="lead">
+            Usando el caso de Harry Potter, consideremos las siguientes afirmaciones:
+        </p>
+        <ul class="list-unstyled">
+            <li>Si no llovió, Harry visitó a Hagrid hoy.</li>
+            <li>Harry visitó a Hagrid o Dumbledore hoy, pero no ambos.</li>
+            <li>Harry visitó a Dumbledore hoy.</li>
+            <li>Harry no visitó a Hagrid hoy.</li>
+            <li>Hoy llovió.</li>
+        </ul>
+
+        <h2 class="my-4">Código del Sistema Experto</h2>
+        <pre>
+<code>
+def sistema_experto_harry():
+    lluvia = input("¿Hoy llovió? (s/n): ").lower() == 's'
+    visito_hagrid = input("¿Harry visitó a Hagrid hoy? (s/n): ").lower() == 's'
+    visito_dumbledore = input("¿Harry visitó a Dumbledore hoy? (s/n): ").lower() == 's'
+
+    # Evaluar la lógica
+    if not lluvia:  # Si no llovió
+        if visito_hagrid:  # Si visitó a Hagrid
+            return "La proposición es verdadera: Harry visitó a Hagrid hoy."
+        else:
+            return "La proposición es falsa: Harry no visitó a Hagrid hoy."
+    else:  # Si llovió
+        if visito_dumbledore and not visito_hagrid:  # Visitó a Dumbledore y no a Hagrid
+            return "La proposición es verdadera: Harry visitó a Dumbledore hoy y no a Hagrid."
+        elif visito_hagrid:  # Si visitó a Hagrid
+            return "La proposición es falsa: Harry no pudo haber visitado a Hagrid hoy porque llovió."
+        else:  # Si no visitó a nadie
+            return "La proposición es falsa: Harry no visitó ni a Hagrid ni a Dumbledore hoy."
+
+# Ejecutar la función y mostrar el resultado
+resultado = sistema_experto_harry()
+print(resultado)
+</code>
+        </pre>
+
+        <h2 class="my-4">Resultado del Sistema Experto</h2>
+        <p class="lead">Ejecuta el código para evaluar la proposición según las respuestas que des.</p>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
